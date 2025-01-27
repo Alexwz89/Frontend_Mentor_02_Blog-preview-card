@@ -1,0 +1,160 @@
+/*define color variation  */
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree-Medium";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+}
+
+/* Global setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree-Medium", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-yellow);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.course_box {
+  width: 384px;
+  height: 522px;
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-950);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 black;
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: 375px;
+  }
+  .course_box {
+    width: 327px;
+    height: 501px;
+  }
+
+  .img-container {
+    height: 200px;
+  }
+
+  .status,
+  .pub_date {
+    font-size: 12px;
+  }
+
+  .describe .course_title {
+    font-size: 20px;
+  }
+
+  .describe .course_describ {
+    font-size: 14px;
+  }
+}
+
+.img-container {
+  margin: 24px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.describe {
+  margin: 0 24px;
+}
+
+.status {
+  box-sizing: content-box;
+  width: 82px;
+  padding: 6px 12px;
+  background-color: var(--color-yellow);
+  font-size: 14px;
+  font-family: "Figtree-ExtraBold";
+  border-radius: 4px;
+
+  color: var(--color-gray-950);
+  margin-bottom: 14px;
+}
+
+.pub_date {
+  font-size: 14px;
+  color: var(--color-gray-950);
+  font-weight: 500;
+  display: block;
+  margin: 18px 0;
+}
+
+.describe a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Figtree-ExtraBold";
+  color: var(--color-gray-950);
+  margin: 16px 0;
+}
+
+.describe a:hover,
+.describe a:focus {
+  color: var(--color-yellow);
+}
+
+.describe p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+.teacher {
+  display: flex;
+  align-items: center;
+  margin: 24px;
+}
+
+.teacher img {
+  width: 32px;
+  height: 32px;
+}
+
+.teacher span {
+  font-size: 14px;
+  color: var(--color-gray-950);
+  font-family: "Figtree-ExtraBold";
+  margin-left: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

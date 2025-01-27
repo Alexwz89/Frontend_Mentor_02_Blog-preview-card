@@ -33,4 +33,4 @@ To build out this blog preview card and get it looking as close to the design as
    Font size for paragraphs: 16px
    Font family: Figtree
    Weights: 500, 800
-"# Frontend_Mentor_02_Blog-preview-card" 
+   "# Frontend_Mentor_02_Blog-preview-card"

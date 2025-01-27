@@ -47,33 +47,6 @@ main {
   box-shadow: 8px 8px 0 black;
 }
 
-@media (max-width: 768px) {
-  body {
-    min-width: 375px;
-  }
-  .course_box {
-    width: 327px;
-    height: 501px;
-  }
-
-  .img-container {
-    height: 200px;
-  }
-
-  .status,
-  .pub_date {
-    font-size: 12px;
-  }
-
-  .describe .course_title {
-    font-size: 20px;
-  }
-
-  .describe .course_describ {
-    font-size: 14px;
-  }
-}
-
 .img-container {
   margin: 24px;
   overflow: hidden;
@@ -157,4 +130,31 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: 375px;
+  }
+  .course_box {
+    width: 327px;
+    height: 501px;
+  }
+
+  .img-container {
+    height: 200px;
+  }
+
+  .status,
+  .pub_date {
+    font-size: 12px;
+  }
+
+  .describe .course_title {
+    font-size: 20px;
+  }
+
+  .describe p {
+    font-size: 14px;
+  }
 }
